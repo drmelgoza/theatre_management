@@ -2,37 +2,26 @@
 #include <string>
 #include "seat.h"
 
-class Seat {
+    Seat::Seat (std::string newId, std::string newType, bool occupationStatus, double newPrice) {
+        id = newId;
+        type = newType;
+        isOccupied = occupationStatus;
+        price = newPrice;
+    }
 
-    private:
-        std::string id;
-        std::string type;
-        bool isOccupied;
-        double price;
+    std::string Seat::getId() {
+        return id;
+    }
 
-    public:
+    std::string Seat::getType() {
+        return type;
+    }
 
-        Seat (std::string newId, std::string newType, bool occupationStatus, double newPrice) {
-            id = newId;
-            type = newType;
-            isOccupied = occupationStatus;
-            price = newPrice;
-        }
+    bool Seat::getOccupationStatus() {
+        return isOccupied;
+    }
 
-        std::string getId() {
-            return id;
-        }
-
-        std::string getType() {
-            return type;
-        }
-
-        bool getOccupationStatus() {
-            return isOccupied;
-        }
-
-        double getPrice() {
-            return price;
-        }
+    double Seat::getPrice() {
+        return price;
+    }
     
-};
