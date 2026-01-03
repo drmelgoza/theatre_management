@@ -3,12 +3,10 @@
 
 
 class Seat{
-
-        std::string getId();
         
-        std::string getType();
-
-        bool getOccupationStatus();
-
-        double getPrice();
+        public:
+                std::string getId();
+                std::string getType();
+                bool getOccupationStatus();
+                double getPrice();
 };

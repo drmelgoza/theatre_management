@@ -37,7 +37,13 @@ class Screening {
         }
 
         int getNumberOfTicketsSold() {
-            return 0.0;
+            int totalTickets = 0;
+            for (int i = 0; i < seats.size(); i++) {
+                if (seats.at(i).getOccupationStatus()) {
+                    totalTickets++;
+                }
+            }
+            return totalTickets;
         }
     
 };
