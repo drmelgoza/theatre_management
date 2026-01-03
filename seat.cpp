@@ -8,13 +8,15 @@ class Seat {
         std::string id;
         std::string type;
         bool isOccupied;
+        double price;
 
     public:
 
-        Seat (std::string newId, std::string newType, bool occupationStatus) {
+        Seat (std::string newId, std::string newType, bool occupationStatus, double newPrice) {
             id = newId;
             type = newType;
             isOccupied = occupationStatus;
+            price = newPrice;
         }
 
         std::string getId() {
@@ -27,6 +29,10 @@ class Seat {
 
         bool getOccupationStatus() {
             return isOccupied;
+        }
+
+        double getPrice() {
+            return price;
         }
     
 };

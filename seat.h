@@ -9,4 +9,6 @@ class Seat{
         std::string getType();
 
         bool getOccupationStatus();
+
+        double getPrice();
 };

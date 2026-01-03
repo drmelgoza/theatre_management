@@ -36,12 +36,8 @@ class Screening {
             return 0.0;
         }
 
-        int getTicketsSold() {
+        int getNumberOfTicketsSold() {
             return 0.0;
-        }
-
-        void asString() {
-            
         }
     
 };
